@@ -211,6 +211,13 @@ $('.popup-image').magnificPopup({
 	}
 });
 
+$('.popup-text').magnificPopup({
+  type: 'inline',
+  gallery: {
+    enabled: true
+  }
+});
+
 /* magnificPopup img view */
 $('.img-pop-up').magnificPopup({
 	type: 'image',
@@ -223,6 +230,10 @@ $('.img-pop-up').magnificPopup({
 $('.popup-video').magnificPopup({
 	type: 'iframe'
 });
+
+// $('.boxed-btn3').click(function(){
+//   $('#resume_pdf').dialog();
+// });
 
 
   // scrollIt for smoth scroll

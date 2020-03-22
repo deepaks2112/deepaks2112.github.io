@@ -630,6 +630,7 @@ pre code {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -1612,7 +1613,8 @@ pre code {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 50%
+        max-width: 50%;
+        justify-content: center;
     }
     .col-xl-7 {
         -webkit-box-flex: 0;
@@ -6903,7 +6905,8 @@ button.bg-dark:hover {
 .align-items-center {
     -webkit-box-align: center!important;
     -ms-flex-align: center!important;
-    align-items: center!important
+    align-items: center!important;
+    justify-content: center;
 }
 
 .align-items-baseline {
