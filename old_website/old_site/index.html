@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>Box of Apps!</title>
+	<script type="text/javascript">
+		function primeTestFunc(){
+			let n=document.getElementById("primeTestInput").value;
+			if(n<2){
+				document.getElementById("primeTestResult").value="Not a prime.";
+				return;
+			}
+			for(let i=2;i<=Math.sqrt(n);i++){
+				if(n%i===0){
+					document.getElementById("primeTestResult").value="Not a prime.";
+					return;
+				}
+			}
+			document.getElementById("primeTestResult").value="It is a prime.";
+		}
+		function factoringFunc(){
+			let n=document.getElementById("factoringInput").value;
+			let facs=[];
+			let i;
+			for(i=1;i<Math.sqrt(n);i++){
+				if(n%i===0){
+					facs.push(i);
+					facs.push(n/i);
+				}
+			}
+			if(n/i===i){
+				facs.push(i);
+			}
+			facs.sort(function(x,y){return x-y;});
+			document.getElementById("factoringResult").value=facs.toString();
+		}
+		function palindromeTestFunc(){
+			let n=document.getElementById("palindromeTestInput").value;
+			n=n.toString();
+			let i;
+			for(i=0;i<n.length/2;i++){
+				if(n[i]!==n[n.length-i-1]){
+					document.getElementById("palindromeTestResult").value="Not a palindrome.";
+					return;
+				}
+			}
+			document.getElementById("palindromeTestResult").value="It is a palindrome.";
+		}
+	</script>
+</head>
+<body>
+	<section id="primeTest">
+		<h2>Test your number for primality</h2>
+		<p>Enter your number</p>
+		<input type="number" id="primeTestInput">
+		<button onClick="primeTestFunc()">Submit</button>
+		<input type="text" id="primeTestResult">
+	</section>
+	<section id="factoring">
+		<h2>Factor your number</h2>
+		<p>Enter your number</p>
+		<input type="number" id="factoringInput">
+		<button onClick="factoringFunc()">Submit</button>
+		<input type="text" id="factoringResult">
+	</section>
+	<section id="palindromeTest">
+		<h2>Check if your number is palindrome</h2>
+		<p>Enter your number</p>
+		<input type="number" id="palindromeTestInput">
+		<button onClick="palindromeTestFunc()">Submit</button>
+		<input text="text" id="palindromeTestResult">
+	</section>
+</body>
+</html>	
