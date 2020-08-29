@@ -9,10 +9,10 @@ body {
 	font-size: 15px;
 }
 
-nav {
+.nav {
 	text-align: center;
-	font-size: 18px;
-	background-color: #009f8a;
+	/*font-size: 18px;*/
+	background-color: #06a7c7;
 }
 .contacts {
 	text-align: center;
@@ -53,9 +53,8 @@ nav {
 	text-decoration-style: dashed;
 }
 
-.navItem {
+.nav-item {
 	font-family: 'Recursive', sans-serif;
-	color: white;
 	font-weight: 700;
 	text-decoration: none;
 	padding-left: 5px;
@@ -64,15 +63,18 @@ nav {
 	padding-bottom: 5px;
 }
 
-.navItem:hover {
+.nav-item:hover {
 	font-family: 'Recursive', sans-serif;
-	color: white;
-	font-weight: 900;
+	font-weight: 700;
 	text-decoration: none;
 	padding-left: 5px;
 	padding-top: 5px;
 	padding-right: 5px;
 	padding-bottom: 5px;
+}
+
+.nav-item a {
+	color: white;
 }
 
 .row {
@@ -83,7 +85,7 @@ nav {
 	grid-template-columns: repeat(auto-fill,minmax(500px, 1fr));
 	grid-auto-rows: minmax(300px,auto);
 	grid-gap: 1em;
-	margin-top: 5px;
+	margin: 20px 20px;
 }
 
 .column {
@@ -92,9 +94,9 @@ nav {
 	justify-content: left;
 	flex-direction: column;
 
-	/*margin-top: 5px;*/
-	/*margin-left: 5px;
-	margin-right: 5px;*/
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
 	flex: 1 1 200px;
 
 	border-style: solid;
@@ -167,5 +169,5 @@ nav {
 
 body {
 
-	background-color: #ede2e1;
+	background-color: white;
 }

@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- <link rel="stylesheet" href="stylesheets/styles.css"> -->
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<link rel="stylesheet" href="stylesheets/styles.css">
 		<title>My Projects</title>
 	</head>
 
 	<body>
-		<nav>
-			<a href="index.html" class="navItem">Home</a>
-			<a href="projects.html" class="navItem">Projects</a>
-			<a href="about.html" class="navItem">Contact Me</a>
-			<a href="https://drive.google.com/file/d/1EVk9xC-1UfmIv7nvMIxdXd9IE--3KAXD/view?usp=sharing" target="_blank" class="navItem">My resume</a>
-		</nav>
+		<ul class="nav nav-tabs justify-content-center">
+			<li class="nav-item">
+				<a class="nav-link" href="index.html" class="navItem">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="projects.html" class="navItem">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="about.html" class="navItem">Contact Me</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://drive.google.com/file/d/1EVk9xC-1UfmIv7nvMIxdXd9IE--3KAXD/view?usp=sharing" target="_blank"  class="navItem">My resume</a>
+			</li>
+		</ul>
 
 		<div class="row">
-			<div class="column">
-				<h3 class="projectHeading">[Research Project] Deepfakes Detection using Deep Learning</h3>
-				<img src="images/deepfakes.jpg">
-				<p>Superviser - Dr. Sk Subidh Ali, Assistant Professor @ Department of EECS, IIT Bhilai<br>
-				Ongoing<br>
-				Completed literature review. Designed and trained some primitive architectures like CNN classifier and autoencoder in Python3 using Keras and TensorFlow.</p>
+			<div class="column card">
+				<img src="images/deepfakes.jpg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="projectHeading card-title">[Research Project] Deepfakes Detection using Deep Learning</h5>
+					<p class="card-text">Superviser - Dr. Sk Subidh Ali, Assistant Professor @ Department of EECS, IIT Bhilai<br>
+					Ongoing<br>
+					Completed literature review. Designed and trained some primitive architectures like CNN classifier and autoencoder in Python3 using Keras and TensorFlow.</p>
+				</div>
 			</div>
 
-			<div class="column">
-				<h3 class="projectHeading">Distributed Storage System</h3>
-				<img src="images/distributed.png">
-				<p>Apr 2020 - May 2020<br>
+			<div class="column card">
+				<img class="card-img-top" src="images/distributed.png">
+				<div class="card-body">
+					<h5 class="projectHeading card-title">Distributed Storage System</h5>
+					<p class="card-text">Apr 2020 - May 2020<br>
 					A group project consisting of three people. My contributions were designing the node architecture and metadata stores, implementation of file update functionality in Java.
-				</p>
+					</p>
+				</div>
 			</div>
 
-			<div class="column">
-				<h3 class="projectHeading">Offline e-Wallet (Android App)</h3>
-				<img src="images/ewallet.png">
-				<p>Oct 2019 - Nov 2019<br>
+			<div class="column card">
+				<img src="images/ewallet.png" class="card-img-top">
+				
+				
+				<div class="card-body">
+					<h5 class="projectHeading card-title">Offline e-Wallet (Android App)</h5>
+					<p class="card-text">Oct 2019 - Nov 2019<br>
 					A group project lead by me. Personally took charge of design of critical operations. Implemented challenge-response based mutual authentication over WiFi-Direct using X509 Certificates and AndroidKeystore in Java. The app achieved desired security level without the use of internet/cellular network/central server.
-				</p>
+					</p>
+				</div>
 			</div>
 
-			<div class="column">
-				<h3 class="projectHeading">sesAR (Android App)</h3>
-				<img src="images/sesar.jpg">
-				<p>Oct 2018<br>
-					A group project with my friends. Built Augmented-Reality enabled app for an exhibition providing the viewers with animation of popular space-crafts when their physical model was scanned with camera.
-				</p>
+			<div class="column card">
+				
+				<img src="images/sesar.jpg" class="card-img-top">
+				<div class="card-body">
+					<h5 class="projectHeading" class="card-title">sesAR (Android App)</h5>
+					<p class="card-text">Oct 2018<br>
+						A group project with my friends. Built Augmented-Reality enabled app for an exhibition providing the viewers with animation of popular space-crafts when their physical model was scanned with camera.
+					</p>
+				</div>
 			</div>
 
 		</div>
