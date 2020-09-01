@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calsome</title>
+    <link rel="stylesheet" href="stylesheets/calc.css">
+  </head>
+  
+  <body>
+    
+    <div class="calc">
+      <div class="screen">
+        <p id="resultScreen">
+          ...
+        </p>
+      </div>
+      <form class="btns" name="Calculator">
+        <input type="button" value="9" onclick="onClick('9')">
+        <input type="button" value="8" onclick="onClick('8')">
+        <input type="button" value="7" onclick="onClick('7')">
+        <input type="button" value="/" onclick="onClick('/')"><br>
+        
+        <input type="button" value="6" onclick="onClick('6')">
+        <input type="button" value="5" onclick="onClick('5')">
+        <input type="button" value="4" onclick="onClick('4')">
+        <input type="button" value="*" onclick="onClick('*')"><br>
+        
+        <input type="button" value="3" onclick="onClick('3')">
+        <input type="button" value="2" onclick="onClick('2')">
+        <input type="button" value="1" onclick="onClick('1')">
+        <input type="button" value="-" onclick="onClick('-')"><br>
+        
+        <input type="button" value="C" onclick="onClick('C')">
+        <input type="button" value="0" onclick="onClick('0')">
+        <input type="button" value="=" onclick="onClick('=')">
+        <input type="button" value="+" onclick="onClick('+')"><br>
+      </form>
+    </div>
+    <script type="text/javascript" src="scripts/calc.js"></script>
+  </body>
+</html>

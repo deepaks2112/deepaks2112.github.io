@@ -1,0 +1,48 @@
+body {
+  background-image: url(https://media.freestocktextures.com/cache/b9/71/b97113e32d32944ef1daad2644f1882d.jpg);
+}
+
+.calc {
+  padding: 0px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 8px;
+  text-align: center;
+  display: inline-block;
+  background-color: black;
+  padding: 5px;
+}
+
+.btns {
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
+  margin: auto;
+  
+  /* border-collapse: collapse; */
+}
+
+.screen {
+  margin: auto;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 415px;
+  height: 125px;
+  background-image: url(https://ak.picdn.net/shutterstock/videos/1040393246/thumb/1.jpg);
+  background-size: contain;
+  color: black;
+  margin-bottom: 5px;
+  font-size: 36px;
+}
+
+.btns input {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-image: url(https://graphiccloud.net/wp-content/uploads/2019/04/Brushed-Metallic-Texture-Wallpaper.jpg);
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  margin-bottom: 2px;
+}
