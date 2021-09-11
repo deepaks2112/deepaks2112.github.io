@@ -196,3 +196,27 @@ body {
 		padding: 0;
 	}
 }
+
+.intro {
+	justify-content: center;
+	align-self: center;
+	align-content: center;
+	margin: auto;
+}
+
+.intro-box {
+	border-style: solid;
+	border-radius: 5px;
+	border-color: black;
+	/* margin: 10px; */
+	max-width: 1000px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.intro-box:hover {
+	transition: transform .1s ease;
+	transform: scale(1.01);
+	/* border-width: 3px; */
+}
